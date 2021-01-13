@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>JavaScript Form Validation Example</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+</head>
+
+<body>
+        <div id="page-container">
+
+            <!-- Main Container -->
+            <div id="main-container">
+                <!-- Page content -->
+                <div id="page-content">
+                    <!-- Validation Header -->
+                    <div class="content-header">
+                        <div class="header-section">
+                            <h1>
+                                <i class="gi gi-warning_sign"></i>Form Validation<br>
+                            </h1>
+                        </div>
+                    </div>
+                    <!-- END Validation Header -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Form Validation Example Block -->
+                            <div class="block">
+                                <!-- Form Validation Example Title -->
+                                <div class="block-title">
+                                    <h2><strong>Form Validation</strong> Example</h2>
+                                </div>
+                                <!-- END Form Validation Example Title -->
+
+                                <!-- Form Validation Example Content -->
+                                <form id="form-validation"
+                                    class="form-horizontal form-bordered" novalidate>
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="val_username">Username <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <input type="text" id="val_username" name="val_username"
+                                                        class="form-control" placeholder="Your username.." onfocusout="validateUsername()">
+                                                    <span class="input-group-addon"><i class="gi gi-user"></i></span>
+                                                </div>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="val_email">Email <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <input type="text" id="val_email" name="val_email"
+                                                        class="form-control" placeholder="test@example.com" onfocusout="validateEmail()">
+                                                    <span class="input-group-addon"><i
+                                                            class="gi gi-envelope"></i></span>
+                                                </div>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="val_password">Password <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <input type="password" id="val_password" name="val_password"
+                                                        class="form-control" placeholder="Choose a crazy one.." onfocusout="validatePassword()">
+                                                    <span class="input-group-addon"><i
+                                                            class="gi gi-asterisk"></i></span>
+                                                </div>
+                                                <span class="help-block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="val_confirm_password">Confirm
+                                                Password <span class="text-danger">*</span></label>
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <input type="password" id="val_confirm_password"
+                                                        name="val_confirm_password" class="form-control"
+                                                        placeholder="..and confirm it!" onfocusout="validateConfirmPassword()">
+                                                    <span class="input-group-addon"><i
+                                                            class="gi gi-asterisk"></i></span>
+                                                </div>
+                                                <span class="help-block"></span>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    
+                                    
+                                    <div class="form-group form-actions">
+                                        <div class="col-md-8 col-md-offset-4">
+                                            <button type="submit" class="btn btn-sm btn-primary"><i
+                                                    class="fa fa-arrow-right"></i> Submit</button>
+                                            <button type="reset" class="btn btn-sm btn-warning"><i
+                                                    class="fa fa-repeat"></i> Reset</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- END Form Validation Example Content -->
+                            </div>
+                            <!-- END Validation Block -->
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- END Page Content -->
+
+                <!-- Footer -->
+                <footer class="clearfix">
+                    
+                </footer>
+                <!-- END Footer -->
+            </div>
+            <!-- END Main Container -->
+        </div>
+        <!-- END Page Container -->
+    
+    <!-- END Page Wrapper -->
+    
+    <script src="js/formValidation.js"></script>
+</body>
+
+</html>
